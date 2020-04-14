@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-md-12">
+        <h1>Consultar creditos</h1>
+        <hr>
+    </div>
+    <div class="col-md-12" *ngIf="creditos && creditos.length">
+        <div class="card">
+          <!--<div class="card-header">
+            <h4 class="card-title"> Simple Table</h4>
+          </div>-->
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table">
+                <thead class=" text-primary">
+                    <th>#</th>
+                    <th>Identificación</th>
+                    <th>Nombre </th>
+                    <th>Valor Servicio</th>
+                    <th>Salario</th>
+                    <th>Copago</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let credito of creditos; index as i ">
+                        <th>{{ i + 1 }}</th>
+                        <td>{{ credito.identificacion }} </td>
+                        <td>{{ credito.nombre }}</td>
+                        <td>{{ credito.capitalInicial  }}</td>
+                        <td>{{ credito.tasaInteres }} %</td>
+                        <td>{{ credito.tiempoDuracion  }}</td>
+                        <td>{{ credito.calcularTotalPagar  }}</td>
+                    </tr>
+                </tbody>                    
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+</div>

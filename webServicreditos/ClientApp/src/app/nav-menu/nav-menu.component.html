@@ -1,0 +1,36 @@
+<div class="sidebar-wrapper">
+  <ul class="nav">
+    <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }">
+      <a [routerLink]="['/']">
+        <i class="nc-icon nc-bank"></i>
+        <p>Home</p>
+      </a>
+    </li>
+    <li [routerLinkActive]="['active']">
+      <a [routerLink]="['/creditoConsulta']">
+        <i class="nc-icon nc-bank"></i>
+        <p>Consulta</p>
+      </a>
+    </li>
+    <li [routerLinkActive]="['active']">
+      <a [routerLink]="['/creditoRegistro']">
+        <i class="nc-icon nc-bank"></i>
+        <p>Registro</p>
+      </a>
+    </li>
+    <!--
+      <li [routerLinkActive]="['active']">
+        <a [routerLink]="['/counter']">
+          <i class="nc-icon nc-bank"></i>
+          <p>Counter</p>
+        </a>
+      </li>
+      <li [routerLinkActive]="['active']">
+        <a [routerLink]="['/fetch-data']">
+          <i class="nc-icon nc-bank"></i>
+          <p>Fetch data</p>
+        </a>
+      </li>
+    -->
+  </ul>
+</div>
