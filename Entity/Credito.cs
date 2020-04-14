@@ -9,7 +9,7 @@ namespace Entity
         public decimal CapitalInicial { get; set; }
         public int TasaInteres { get; set; }
         public int TiempoDuracion { get; set; }
-        public int TotalPagar { get; set; }
+        public decimal TotalPagar { get; set; }
 
         public decimal CalcularTasaInteres(){
             return this.TasaInteres / 100;

@@ -53,8 +53,8 @@ namespace Datos
             credito.Identificacion = (string)reader["Identificacion"];
             credito.Nombre = (string)reader["Nombre"];
             credito.CapitalInicial = (decimal)reader["CapitalInicial"];
-            credito.TasaInteres = (decimal)reader["TasaInteres"];
-            credito.TiempoDuracion = (decimal)reader["TiempoDuracion"];            
+            credito.TasaInteres = (int)reader["TasaInteres"];
+            credito.TiempoDuracion = (int)reader["TiempoDuracion"];            
             credito.TotalPagar = (decimal)reader["TotalPagar"];
             return credito;
         }
