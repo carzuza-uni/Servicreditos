@@ -41,7 +41,7 @@ namespace webServicreditos.Controllers
                 Identificacion = creditoInput.Identificacion,
                 Nombre = creditoInput.Nombre,
                 CapitalInicial = creditoInput.CapitalInicial,
-                TasaInteres = creditoInput.TasaInteres
+                TasaInteres = creditoInput.TasaInteres,
                 TiempoDuracion = creditoInput.TiempoDuracion
             };
             return credito;

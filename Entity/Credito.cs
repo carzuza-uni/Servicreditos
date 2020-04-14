@@ -17,7 +17,9 @@ namespace Entity
 
         public decimal CalcularTotalPagar(){
             if(this.CapitalInicial > 0 && this.TiempoDuracion > 0){
-                this.TotalPagar = this.CapitalInicial * (Math.Pow(1 + this.CalcularTasaInteres(), this.TiempoDuracion));
+                double x = (double)(1 + this.CalcularTasaInteres());
+                double y = (double)(this.TiempoDuracion);
+                this.TotalPagar = (decimal)( (double)(this.CapitalInicial) * (Math.Pow( x , y )));
                 return this.TotalPagar;
             }
             return 0;
